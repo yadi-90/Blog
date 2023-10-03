@@ -1,0 +1,53 @@
+.App-header{
+    background-color: #282c34;
+    min-height: 100vh;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    font-size: 18px;
+    color:white;
+}
+
+
+.post{
+    border-radius: black;
+}
+.cards{
+    display:grid;
+
+}
+
+.home-image{
+    background-size: cover;
+    object-fit: cover;
+    width:90rem;
+    height:40rem;
+}
+.container{
+    max-width: 300px;
+    margin: 0 auto;
+    height: 80px;
+    overflow: hidden;
+}
+.content{
+    height:50px;
+    width:100%;
+    background-color:lightgreen;
+    color:black;
+}
+.App{
+    text-align: center;
+}
+
+
+a {
+    font-weight: 500;
+    color: red;
+    text-decoration: inherit;
+    justify-content: space-around;
+
+}
+nav {
+    display: inline-block;
+}
