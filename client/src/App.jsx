@@ -1,4 +1,4 @@
-
+import Home from './components/home'
 
 import './App.css'
 
@@ -10,7 +10,7 @@ function App() {
 <blog>
   <h1> Feeling Awesome!</h1>
 </blog>
-
+<Home />
     </>
   )
 }
