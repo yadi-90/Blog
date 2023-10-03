@@ -1,5 +1,5 @@
 import Home from './components/home'
-
+import Form from './components/Form'
 import './App.css'
 
 function App() {
@@ -9,6 +9,10 @@ function App() {
     <>
 <blog>
   <h1> Feeling Awesome!</h1>
+  <nav>
+    <a href="/form"> Form</a>
+    
+  </nav>
 </blog>
 <Home />
     </>
