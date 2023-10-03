@@ -1,5 +1,6 @@
 import Home from './components/home'
 import Form from './components/Form'
+import BlogPosts from './components/Blogpost'
 import './App.css'
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
   </nav>
 </blog>
 <Home />
+<BlogPosts />
     </>
   )
 }
