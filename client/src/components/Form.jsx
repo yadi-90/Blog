@@ -1,5 +1,5 @@
 import { useState} from "react";
-
+import { useNavigate } from "react-router-dom";
 
 const Form = (props)=>{
     const {initialPost={
@@ -11,7 +11,7 @@ const Form = (props)=>{
         alt:"" 
     }}=props;
 
-    const=[posts, setPosts] = useState(initialPost);
+    const [ posts, setPosts] = useState(initialPost);
 
 //create functions that handle the event of the user typing into the form
  const handleDateChange = (event) => {
@@ -51,7 +51,7 @@ const handlealt = (event) => {
     
 //A function to handle the post request
   const postBlogPost = (newPost) => {
-    return fetch('http://localhost:4002/blogposts', {
+    return fetch('http://localhost:5173/blogposts', {
   method: 'POST',
    headers: {'Content-Type': 'application/json'}, 
    body: JSON.stringify(newPost)
@@ -66,7 +66,7 @@ const handlealt = (event) => {
     
    //a function to handle the Update request
    const updatePost = (existingPost) =>{
-   return fetch(`http://localhost:4002/blogposts/${existingPost.id}`, {
+   return fetch(`http://localhost:5173/blogposts/${existingPost.id}`, {
     method: 'PUT',
     headers: {'Content-Type': 'application/json'}, 
    body: JSON.stringify(existingPost)

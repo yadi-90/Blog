@@ -6,7 +6,7 @@ const BlogPosts = () => {
   const [editingPostId, setEditingPostId] = useState(null);
 
   const loadPosts = () => {
-    fetch("http://localhost:4002/blogposts")
+    fetch("http://localhost:5173/blogposts")
       .then((response) => response.json())
       .then((posts) => {
         setPosts(posts);
